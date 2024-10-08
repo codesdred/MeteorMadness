@@ -1,0 +1,71 @@
+/* src/Maze.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a; /* Dark background */
+  }
+  
+  .maze-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* No padding */
+  }
+  
+  .maze-row {
+    display: flex;
+  }
+  
+  .maze-cell {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0; /* No margin to remove gaps */
+    border: none; /* No border to avoid thick lines */
+  }
+  
+  .wall {
+    background-color: green; /* Wall color */
+  }
+  
+  .path {
+    background-color: white; /* Path color */
+  }
+  
+  .player {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff6347; /* Player's color */
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .question-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 2px solid #000;
+    z-index: 1000; /* Ensure it's on top of the maze */
+  }
+  
+  .game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    border: 2px solid #000;
+    z-index: 1000; /* Ensure it's on top of the maze */
+  }
+  
